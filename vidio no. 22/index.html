@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+      html {
+        font-size: 12px;
+      }
+      .box {
+        box-sizing: border-box;
+        border: 2px solid black;
+        /*width: 2048px;*/
+        width: 90vw;
+        height: 10vh;
+        margin: auto;
+        background-color: aquamarine;
+      }
+      .container {
+        box-sizing: border-box;
+        border: 2px solid black;
+        /*width: 2048px;*/
+        width: 90vw;
+        height: 80vh;
+        margin: 23px auto;
+        font-size: 16px;
+        background-color: aquamarine;
+      }
+      .container > div {
+        font-size: 2rem;
+        width: 50%;
+        border: 2px solid black;
+      }
+      .container > div > div{
+        border: 2px solid blue;
+        width: 50%;
+      }
+      .mycont {
+        box-sizing: border-box;
+        border: 2px solid black;
+        margin: 23px auto;
+        color: rgb(8, 1, 1);
+        font-size: 22px;
+        width: 100vmin;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="box">This is a box</div>
+    <div class="container">
+      <div>
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Facere ab,
+        fugiat dolores voluptatibus optio aspernatur assumenda, perferendis
+        nostrum distinctio expedita voluptates officiis! Temporibus
+        necessitatibus minus ut odio repudiandae id accusantium quasi libero
+        dignissimos voluptates similique explicabo ab, earum quaerat ratione
+        repellat pariatur, perspiciatis iste nostrum. Esse iusto voluptatem
+        excepturi obcaecati quidem, doloremque aut. Beatae asperiores mollitia
+        magni? Recusandae, odio veniam nemo vero nesciunt numquam voluptas
+        impedit eligendi?
+        <div
+          >Lorem ipsum dolor sit amet, consectetur adipisicing elit. Recusandae
+          culpa voluptatibus, perspiciatis accusantium delectus quaerat pariatur
+          iure ducimus nostrum debitis, molestias deserunt fugit sint voluptas
+          ullam sunt iusto! Aut, distinctio. Quibusdam magnam molestiae, modi
+          reprehenderit exercitationem praesentium dicta laudantium accusamus
+          eum ex totam excepturi architecto.</div
+        >
+      </div>
+    </div>
+    <div class="mycont">I am another container.</div>
+  </body>
+</html>

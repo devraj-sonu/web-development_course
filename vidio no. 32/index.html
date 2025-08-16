@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS Card Design</title>
+
+    <!-- Combined Google Fonts import -->
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Honk&display=swap");
+      @import url("https://fonts.googleapis.com/css2?family=Bitcount+Grid+Double:wght@100..900&display=swap");
+      @import url("https://fonts.googleapis.com/css2?family=Sevillana&display=swap");
+    </style>
+
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="card" id="profilecard">
+      <div class="image">
+        <img
+          src="https://media.istockphoto.com/id/95339763/photo/speedboat-in-sunset.jpg?s=1024x1024&w=is&k=20&c=2iYDFxDOymyZi66iBipTJxPtkY1LKDPpsLT_9KsZbfY="
+          alt="Boat image"
+          class="Boating"
+        />
+      </div>
+
+      <div class="tag-container capsules">
+        <span class="tag sevillana">Nature</span>
+        <span class="tag sevillana">Lake</span>
+      </div>
+
+      <div class="collapsible-card">
+        <div class="name-line">
+          <span class="honk">Devraj</span>
+          <button class="read-more" onclick="toggleCard()">READ MORE</button>
+        </div>
+
+        <div class="more-text" id="more-text">
+          <p class="bitcount">
+            I am a passionate and hardworking student with a strong interest in
+            technology, programming, and problem-solving. I enjoy exploring new
+            concepts, especially in web development and software engineering. I
+            constantly seek opportunities to learn and grow through hands-on
+            projects and real-world challenges. My goal is to build innovative
+            solutions that are both useful and impactful. I believe in
+            consistent effort, teamwork, and staying curious. Outside of
+            academics, I enjoy experimenting with creative ideas, helping
+            others, and staying up-to-date with the latest tech trends. I aspire
+            to contribute meaningfully in the tech industry and make a
+            difference through my work.
+          </p>
+        </div>
+      </div>
+
+      <!-- Toggle Script -->
+      <script>
+        function toggleCard() {
+          const moreText = document.getElementById("more-text");
+          moreText.style.display =
+            moreText.style.display === "none" ? "block" : "none";
+        }
+
+        // Optional: hide the text on initial load
+        window.onload = () => {
+          document.getElementById("more-text").style.display = "none";
+        };
+      </script>
+    </div>
+  </body>
+</html>

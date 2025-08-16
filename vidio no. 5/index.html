@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Images</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <img width="200" height="200" src="Profile pictures.png" alt="profile picture">
+    <br>
+    <table>
+        <caption>----Employee Details-----</caption> 
+        
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Designation</th>
+                <th>Favourite Language</th>
+            </tr>
+        </thead>
+
+        <tbody> <!-- ✅ Add this -->
+        <tr>
+            <td>Devraj</td>
+            <td>Programmer</td>
+            <td>Html</td>
+        </tr>
+
+        <tr>
+            <td colspan = "2">Devraj</td>
+            <td rowspan = "2">Html</td>
+        </tr>
+
+        <tr>
+            <td colspan = "2">Devraj</td>
+        </tr>
+        </tbody> <!-- ✅ Then close here -->
+
+        <tfoot>
+            <tr>
+                <td colspan = "2">Devraj</td>
+                <td rowspan = "2">foot</td>        
+            </tr>
+        </tfoot>
+
+    </table>
+
+    <ul type = "square">
+        <li>Rohan</li>
+        <li>Raj</li>
+        <li>Subham</li>
+    </ul>
+
+    <ol type = "A">
+        <li>Rohan</li>
+        <li>Raj</li>
+        <li>Subham</li>
+    </ol>
+
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,15 @@
+.Container{
+    border: 2px solid red;
+    display: flex;
+    height: 80vh;
+    justify-content: center;
+    align-items: center;
+    .item{
+        height: 92px;
+        width: 92px;
+        background-color: blueviolet;
+        border: 2px solid black;
+        margin: 4px;
+
+    }
+}

@@ -1,0 +1,119 @@
+/* Reset */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+}
+
+/* Body Styling */
+body {
+  background-color: #f0f0f0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+/* Card Container */
+.card {
+  background-color: white;
+  width: 300px;
+  border-radius: 15px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+  overflow: hidden;
+  padding: 20px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* 🔹 Card hover effect */
+.card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.25);
+}
+
+/* Image Styling */
+.image img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+/* 🔹 Image zoom on hover */
+.image:hover img {
+  transform: scale(1.05);
+}
+
+/* Tag Container */
+.tag-container {
+  margin-top: 15px;
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+/* Tag Styles */
+.tag {
+  background-color: #e0e0e0;
+  padding: 4px 10px;
+  border-radius: 20px;
+  font-size: 14px;
+  transition: background-color 0.3s;
+}
+
+/* 🔹 Tag hover effect */
+.tag:hover {
+  background-color: #c0c0c0;
+}
+
+/* Font Styles */
+.sevillana {
+  font-family: 'Sevillana', cursive;
+}
+
+.honk {
+  font-family: 'Honk', cursive;
+  font-size: 24px;
+  color: #333;
+}
+
+.bitcount {
+  font-family: 'Bitcount Grid Double', monospace;
+  font-size: 14px;
+  margin-top: 10px;
+  line-height: 1.4;
+}
+
+/* Name Line Layout */
+.name-line {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 20px;
+}
+
+/* Read More Button */
+.read-more {
+  background-color: #333;
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 12px;
+  transition: background-color 0.3s, transform 0.2s;
+}
+
+/* 🔹 Button hover effect */
+.read-more:hover {
+  background-color: #555;
+  transform: scale(1.05);
+}
+
+/* Hidden Text by Default */
+.more-text {
+  margin-top: 15px;
+  display: none;
+}

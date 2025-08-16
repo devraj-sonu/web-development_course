@@ -1,0 +1,1 @@
+alert("You are not a good boy")
